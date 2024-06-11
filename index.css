@@ -1,0 +1,80 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bg-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.navbar {
+    background: transparent !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin-right: 15px;
+    font-size: large;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0f95d3 !important; 
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content h1, p {
+    animation: fadeInOut 10s infinite;
+    font-weight: bolder;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    25%, 50% {
+        opacity: 1;
+        color: blanchedalmond;
+    }
+}
+
+.btn-submit {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: #2b01a0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(14, 13, 13);
+    text-decoration: none;
+}
